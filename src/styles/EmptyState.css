@@ -1,0 +1,33 @@
+.empty-state {
+  grid-column: 1 / -1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-xl);
+  border: 1px dashed var(--color-slate-300);
+  padding: 4rem 1rem;
+  text-align: center;
+}
+
+.empty-state__icon {
+  color: var(--color-slate-300);
+}
+
+.empty-state__title {
+  margin-top: 0.75rem;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: var(--color-slate-800);
+}
+
+.empty-state__text {
+  font-size: 0.875rem;
+  color: var(--color-slate-500);
+  margin-top: 0.25rem;
+  max-width: 20rem;
+}
+
+.empty-state__btn {
+  margin-top: 1.25rem;
+}

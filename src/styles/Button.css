@@ -1,0 +1,60 @@
+.fh-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  border-radius: var(--radius-lg);
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  transition: background-color 0.15s ease, border-color 0.15s ease;
+  cursor: pointer;
+  border: none;
+}
+
+.fh-btn:focus-visible {
+  outline: 2px solid var(--color-amber-500);
+  outline-offset: 2px;
+}
+
+.fh-btn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.fh-btn--primary {
+  background-color: var(--color-slate-900);
+  color: var(--color-white);
+}
+
+.fh-btn--primary:hover:not(:disabled) {
+  background-color: var(--color-slate-800);
+}
+
+.fh-btn--accent {
+  background-color: var(--color-amber-500);
+  color: var(--color-slate-900);
+}
+
+.fh-btn--accent:hover:not(:disabled) {
+  background-color: var(--color-amber-400);
+}
+
+.fh-btn--ghost {
+  background-color: transparent;
+  color: var(--color-slate-700);
+}
+
+.fh-btn--ghost:hover:not(:disabled) {
+  background-color: var(--color-slate-100);
+}
+
+.fh-btn--outline {
+  background-color: var(--color-white);
+  color: var(--color-slate-900);
+  border: 1px solid var(--color-slate-300);
+}
+
+.fh-btn--outline:hover:not(:disabled) {
+  background-color: var(--color-slate-50);
+}

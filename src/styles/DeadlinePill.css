@@ -1,0 +1,28 @@
+.deadline-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  border-radius: var(--radius-full);
+  padding: 0.25rem 0.625rem;
+  font-size: 0.75rem;
+  font-weight: 500;
+  box-shadow: inset 0 0 0 1px transparent;
+}
+
+.deadline-pill--urgent {
+  color: var(--color-rose-600);
+  background-color: var(--color-rose-50);
+  box-shadow: inset 0 0 0 1px var(--color-rose-200);
+}
+
+.deadline-pill--warning {
+  color: var(--color-amber-700);
+  background-color: var(--color-amber-50);
+  box-shadow: inset 0 0 0 1px var(--color-amber-200);
+}
+
+.deadline-pill--safe {
+  color: var(--color-slate-600);
+  background-color: var(--color-slate-50);
+  box-shadow: inset 0 0 0 1px var(--color-slate-200);
+}
